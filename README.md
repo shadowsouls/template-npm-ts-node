@@ -10,3 +10,8 @@
 3. "lodash": "^4.17.21" 该依赖用于测试该模板能否使用第三方依赖
 4. "the-answer": "^1.0.0" 该依赖用于测试模板是否能使用CMD格式的模块使用
 
+## 使用注意
+
+你需要修改package.json中的name、、version、author
+
+license可任意修改
