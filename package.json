@@ -1,6 +1,6 @@
 {
   "name": "@deepfish/test-micro",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "",
   "source": "src/index.ts",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && microbundle",
     "dev": "microbundle watch",
-    "pub": "npm run build && npm publish --access public"
+    "pub": "npm i && npm run build && npm publish --access public"
   },
   "files": [
     "dist",
