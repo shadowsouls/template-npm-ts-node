@@ -1,0 +1,38 @@
+{
+  "name": "@deepfish/test-micro",
+  "version": "0.0.14",
+  "description": "",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && microbundle",
+    "dev": "microbundle watch",
+    "pub": "npm run build && npm publish --access public"
+  },
+  "files": [
+    "dist",
+    "tsconfig.json",
+    "tsconfig.types.json",
+    "package.json"
+  ],
+  "author": "deepfish",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.181",
+    "microbundle": "^0.14.2",
+    "rimraf": "^3.0.2",
+    "@types/node": "^16.11.27"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "the-answer": "^1.0.0"
+  }
+}
