@@ -1,6 +1,6 @@
 {
-  "name": "@deepfish/test-micro",
-  "version": "0.0.15",
+  "name": "",
+  "version": "0.0.0",
   "description": "",
   "source": "src/index.ts",
   "types": "dist/index.d.ts",
@@ -23,7 +23,7 @@
     "tsconfig.types.json",
     "package.json"
   ],
-  "author": "deepfish",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/lodash": "^4.14.181",
