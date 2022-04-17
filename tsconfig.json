@@ -1,5 +1,6 @@
 // tsconfig.json
 {
+  "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
     /* 基础选项 */
     "target": "ES6",
@@ -54,6 +55,7 @@
   "exclude": ["node_modules"],
   "ts-node": {
     "transpileOnly": true,
+    "files": true,
     "require": [ "typescript-transform-paths/register" ],
   },
 }

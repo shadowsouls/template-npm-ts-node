@@ -1,4 +1,5 @@
 import { sum, answerHello, hello, lodashHello } from "../src";
+import {  } from "timers";
 
 test('测试sum', () => {
     expect(sum(1, 2)).toBe(3)
