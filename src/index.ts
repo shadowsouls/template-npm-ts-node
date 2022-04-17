@@ -31,3 +31,12 @@ export function answerHello() {
 export function sum(a: number, b: number) {
   return a + b
 }
+
+console.log(sum(1,3));
+console.log(sayRouter());
+console.log(lodashHello());
+console.log(resHello());
+console.log(answerHello());
+
+
+
