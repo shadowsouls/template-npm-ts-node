@@ -1,7 +1,6 @@
 // tsconfig.json
 {
   "compilerOptions": {
-
     /* 基础选项 */
     "target": "ES6",
     /* 指定 ECMAScript 目标版本：'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
@@ -22,6 +21,8 @@
     "strict": true,
     /* 启用所有严格类型检查选项 */
     "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
     /* 检查隐含 any 类型的表达式和声明 */
     "strictNullChecks": false,
     /* 严格空检查. */
@@ -40,9 +41,19 @@
     },
     /* 记录 baseUrl 的模块路径查找别名 */
     /* 类型声明文件 */
+    "plugins": [
+      { "transform": "typescript-transform-paths", "useRootDirs": true },
+      { "transform": "typescript-transform-paths", "useRootDirs": true, "afterDeclarations": true }
+    ]
   },
   "include": [
     /* 指定编译处理的文件列表 */
-    "./src"
-  ]
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": true,
+    "require": [ "typescript-transform-paths/register" ],
+  },
 }
