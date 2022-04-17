@@ -5,10 +5,17 @@
 
 ## 使用依赖
 
-1. "microbundle": "^0.14.2", 该依赖为打包依赖，集成了rollup与tsc的功能
-2. "rimraf": "^3.0.2", 该依赖用于build时删除指定文件或目录
-3. "lodash": "^4.17.21" 该依赖用于测试该模板能否使用第三方依赖
-4. "the-answer": "^1.0.0" 该依赖用于测试模板是否能使用CMD格式的模块使用
+~~~json
+    "@types/jest": "^27.4.1", //测试
+    "@types/lodash": "^4.14.181",
+    "@types/node": "^16.11.27",
+    "jest": "^27.4.1",
+    "microbundle": "^0.14.2", //打包工具
+    "rimraf": "^3.0.2", //命令行删除
+    "ts-jest": "^27.1.4", 
+    "typescript": "^4.6.3",
+    "typescript-transform-paths": "^3.3.1"
+~~~
 
 ## 使用注意
 
